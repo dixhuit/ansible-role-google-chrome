@@ -11,6 +11,6 @@
     domain: com.google.Chrome
     key: AppleEnableSwipeNavigateWithScrolls
     type: bool
-    value: "{{ google_chrome_swipenavigate }}"
+    value: "{{ google_chrome_AppleEnableSwipeNavigateWithScrolls }}"
   notify:
     - killall Google Chrome

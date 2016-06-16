@@ -21,7 +21,7 @@ google_chrome_appdir: "/Applications"
 Where to install the app. The value is passed to Homebrew Cask via the `--appdir` option.
 
 ```
-google_chrome_swipenavigate: false
+google_chrome_AppleEnableSwipeNavigateWithScrolls: false
 ```
 
 Toggles trackpad swipe navigation. Default is to disable it.
