@@ -1,0 +1,16 @@
+---
+
+- name: Install Google Chrome
+  homebrew_cask: name=google-chrome state=present
+  environment:
+    HOMEBREW_CASK_OPTS: --appdir="{{ google_chrome_appdir }}"
+  notify: brew cask cleanup
+
+- name: Toggle swipe navigation
+  osx_defaults:
+    domain: com.google.Chrome
+    key: AppleEnableSwipeNavigateWithScrolls
+    type: bool
+    value: "{{ google_chrome_swipenavigate }}"
+  notify:
+    - killall Google Chrome
