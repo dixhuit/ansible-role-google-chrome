@@ -15,12 +15,6 @@ Installs & configures Google Chrome on Mac OS X.
 All role default variables are listed below along with their respective default values.
 
 ```
-google_chrome_appdir: "/Applications"
-```
-
-Where to install the app. The value is passed to Homebrew Cask via the `--appdir` option.
-
-```
 google_chrome_AppleEnableSwipeNavigateWithScrolls: false
 ```
 
