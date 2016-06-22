@@ -2,12 +2,12 @@
 
 [![Build Status](https://travis-ci.org/danbohea/ansible-role-google-chrome.svg?branch=master)](https://travis-ci.org/danbohea/ansible-role-google-chrome)
 
-Installs & configures Google Chrome on Mac OS X.
+Installs & configures Google Chrome on macOS.
 
 
 ## Requirements
 
-- Mac OS 10.9+
+- macOS 10.9+
 
 
 ## Role Variables
