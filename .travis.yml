@@ -1,22 +1,23 @@
 ---
 
+sudo: required
 # https://docs.travis-ci.com/user/osx-ci-environment
-
+language: objective-c
 matrix:
   include:
     # macOS 10.12
-    - os: osx
-      osx_image: xcode8.2
+    - osx_image: xcode8.2
     # macOS 10.11
-    - os: osx
-      osx_image: xcode8
-    # macOS 10.10
-    - os: osx
-      osx_image: xcode6.4
-  allow_failures:
+    - osx_image: xcode8
     # macOS 10.10
     - osx_image: xcode6.4
-  fast_finish: true
+
+before_install:
+  # Uninstall preinstalled Homebrew
+  - 'ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)" </dev/null'
+  - rm -rf /usr/local/Homebrew
+  - sudo rm -rf /usr/local/Caskroom
+  - rm -rf /usr/local/bin/brew
 
 install:
   # Debug info
