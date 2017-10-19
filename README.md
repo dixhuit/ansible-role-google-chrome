@@ -14,7 +14,7 @@ Installs & configures Google Chrome on macOS.
 
 All role default variables are listed below along with their respective default values.
 
-```
+```yaml
 google_chrome_AppleEnableSwipeNavigateWithScrolls: false
 ```
 
@@ -28,7 +28,7 @@ Toggles trackpad swipe navigation. Default is to disable it.
 
 ## Example Playbook
 
-```
+```yaml
 - hosts: macbook
   connection: local
 
